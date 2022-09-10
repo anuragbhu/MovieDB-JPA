@@ -16,6 +16,7 @@ public class Movie {
     // GenerationType.AUTO -> Hibernate is responsible for assigning unique value to the attribute.
     //                     -> Also, two different tables will not have same id value like 1 exists
     //                        in one table then it will not exit in same as well as other table also.
+//                         -> As we have only one hibernate_sequence (sequence in db) for all.
     // GenerationType.IDENTITY -> Postgres is responsible for assigning unique value to the attribute.
     private String name;
     private String title;
