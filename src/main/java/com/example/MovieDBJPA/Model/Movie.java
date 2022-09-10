@@ -17,6 +17,8 @@ public class Movie {
     //                     -> Also, two different tables will not have same id value like 1 exists
     //                        in one table then it will not exit in same as well as other table also.
 //                         -> As we have only one hibernate_sequence (sequence in db) for all.
+//                         -> Don't insert records from postgres console or any other means as
+//                            id will not be updated in hibernate_sequence.
     // GenerationType.IDENTITY -> Postgres is responsible for assigning unique value to the attribute.
     private String name;
     private String title;
